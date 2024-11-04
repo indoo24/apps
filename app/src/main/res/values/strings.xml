@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My First App</string>
+    <string name="wallpaper">Wallpaper</string>
+    <string name="button">Ha Ha Ha ha</string>
+    <string name="my_name">Yousef Mohamed Kandeel</string>
+    <string name="age">21 years</string>
+    <string name="home">Alexandria</string>
+</resources>
