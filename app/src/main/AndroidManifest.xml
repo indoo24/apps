@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFirstApp"
         tools:targetApi="31">
+        <meta-data
+            android:name="example.meta.data"
+            android:value="some_value" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
