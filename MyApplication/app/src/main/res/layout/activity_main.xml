@@ -27,7 +27,7 @@
         android:layout_marginEnd="297dp"
         android:gravity="center"
         android:text="@string/Sign_in"
-        android:textColor="#000000"
+        android:textColor="#397DFE"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,20 +38,27 @@
 
     <Button
         android:id="@+id/button"
+        style="@style/Widget.Material3.Button.OutlinedButton"
         android:layout_width="197dp"
         android:layout_height="62dp"
         android:layout_marginStart="144dp"
         android:layout_marginEnd="176dp"
         android:layout_marginBottom="32dp"
+        android:background="#397DFE"
         android:gravity="center"
+        android:outlineAmbientShadowColor="@android:color/holo_blue_dark"
+        android:shadowColor="#050505"
         android:text="@string/Sign_in"
+        android:textColor="#FEFAFD"
+        android:textColorLink="#191717"
         android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.349"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
-        app:layout_constraintVertical_bias="0.217" />
+        app:layout_constraintVertical_bias="0.217"
+        app:strokeColor="#397DFE" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"

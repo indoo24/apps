@@ -4,8 +4,8 @@ import androidx.recyclerview.widget.DiffUtil
 
 
 class MyDiffutil(
-    private val oldList: List<BestPracticeAdapter.CardItem>,
-    private val newList: List<BestPracticeAdapter.CardItem>
+    private val oldList: List<Movies_adapter.CardItem>,
+    private val newList: List<Movies_adapter.CardItem>
 ):DiffUtil.Callback(){
     override fun getOldListSize(): Int {
         return oldList.size

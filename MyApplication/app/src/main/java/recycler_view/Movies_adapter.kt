@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.databinding.RvItemBinding
 
 
-class BestPracticeAdapter:RecyclerView.Adapter<BestPracticeAdapter.ViewHolder> (){
+class Movies_adapter:RecyclerView.Adapter<Movies_adapter.ViewHolder> (){
     private var itemList :List<CardItem> = emptyList()    // *changing
     data class CardItem(var title: String,
                         var description : String,

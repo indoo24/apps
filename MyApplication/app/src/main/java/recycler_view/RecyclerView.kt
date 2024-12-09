@@ -12,7 +12,7 @@ import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityRecyclerViewBinding
 
 class RecyclerView : AppCompatActivity() {
-    private val bestPracticeAdapter by lazy { BestPracticeAdapter() }
+    private val bestPracticeAdapter by lazy { Movies_adapter() }
     private lateinit var binding: ActivityRecyclerViewBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         binding= ActivityRecyclerViewBinding.inflate(layoutInflater)
@@ -30,36 +30,36 @@ class RecyclerView : AppCompatActivity() {
 
     }
 
-    private fun getMoreItems(): List<BestPracticeAdapter.CardItem> {
+    private fun getMoreItems(): List<Movies_adapter.CardItem> {
         return listOf(
-            BestPracticeAdapter.CardItem("Nemo",
+            Movies_adapter.CardItem("Nemo",
                 "The film tells the story of a clownfish named Nemo (voiced by Alexander Gould) who gets abducted from his home in the Great Barrier Reef and winds up in a dentist's office aquarium.",
                 "Publish_Date : 2003","Rate : 8.0",R.drawable.image2),
-            BestPracticeAdapter.CardItem("LionKing",
+            Movies_adapter.CardItem("LionKing",
                 "The Lion King is about a young lion prince named Simba who, after losing his father in a staged accident which he feels he caused, must face his fear of responsibility and take his rightful place on the throne.",
                 "Publish_Date : 1994","Rate : 9.0",R.drawable.image3),
-            BestPracticeAdapter.CardItem("Priserky",
+            Movies_adapter.CardItem("Priserky",
                 "Monsters, Inc. is a film about monsters who collect children's screams for energy but discover the power of laughter and friendship.",
                 "Publish_Date : 2001","Rate : 8.1",R.drawable.image4),
-            BestPracticeAdapter.CardItem("ToyStory",
+            Movies_adapter.CardItem("ToyStory",
                 "Toy Story is an animated film about a group of toys that come to life when humans aren't around.It follows Woody,and Buzz,as they navigate rivalry,friendship,and adventures while trying to return to their owner,Andy.",
                 "Publish_Date : 1995","Rate : 9.3",R.drawable.image5),
-            BestPracticeAdapter.CardItem("Aladdin",
+            Movies_adapter.CardItem("Aladdin",
                 "Aladdin follows a kind-hearted thief who discovers a magical lamp and uses its genie to win the heart of Princess Jasmine while facing the evil sorcerer Jafar.",
                 "Publish_Date : 1992","Rate : 8.4",R.drawable.image6),
-            BestPracticeAdapter.CardItem("Tarzan",
+            Movies_adapter.CardItem("Tarzan",
                 "Tarzan follows a man raised by apes who must choose between his jungle home and the human world after meeting Jane.",
                 "Publish_Date : 1999","Rate : 9",R.drawable.image7),
-            BestPracticeAdapter.CardItem("Ralph",
+            Movies_adapter.CardItem("Ralph",
                 "Wreck-It Ralph follows a video game villain, Ralph, who dreams of being a hero. He embarks on an adventure across different games to prove his worth.",
                 "Publish_Date : 2012","Rate : 6.5",R.drawable.image8),
-            BestPracticeAdapter.CardItem("LUCA",
+            Movies_adapter.CardItem("LUCA",
                 "Luca is an animated film about a young sea monster named Luca who explores the Italian Riviera, discovering friendship, self-acceptance, and the world above the water",
                 "Publish_Date : 2021","Rate : 9.5",R.drawable.image9),
-            BestPracticeAdapter.CardItem("PeterPan",
+            Movies_adapter.CardItem("PeterPan",
                 "Peter Pan is about a boy who never grows up and leads a group of children on adventures in Neverland, where they battle the villainous Captain Hook.",
                 "Publish_Date : 1998","Rate : 7.4",R.drawable.image10),
-            BestPracticeAdapter.CardItem("UP",
+            Movies_adapter.CardItem("UP",
                 "Up is an animated film about an elderly man, Carl, who embarks on an adventure to fulfill his late wife's dream, with an unexpected companion, a young boy named Russell.",
                 "Publish_Date : 2009","Rate : 9.0", R.drawable.image11),
 
