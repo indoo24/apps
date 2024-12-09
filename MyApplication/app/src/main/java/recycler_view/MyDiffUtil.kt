@@ -1,17 +1,27 @@
-package recycler_view
+package com.example.assignment3
 
-import android.annotation.SuppressLint
 import androidx.recyclerview.widget.DiffUtil
 
-class MovieDiffCallback : DiffUtil.ItemCallback<Movie>() {
-    override fun areItemsTheSame(oldItem: Movie, newItem: Movie): Boolean {
 
-        return oldItem.title == newItem.title
+class MyDiffutil(
+    private val oldList: List<BestPracticeAdapter.CardItem>,
+    private val newList: List<BestPracticeAdapter.CardItem>
+):DiffUtil.Callback(){
+    override fun getOldListSize(): Int {
+        return oldList.size
     }
 
-    @SuppressLint("DiffUtilEquals")
-    override fun areContentsTheSame(oldItem: Movie, newItem: Movie): Boolean {
-
-        return oldItem == newItem
+    override fun getNewListSize(): Int {
+        return newList.size
     }
+
+    override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
+        return oldList[oldItemPosition]==newList[newItemPosition]
+    }
+
+    override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
+        return oldList[oldItemPosition]==newList[newItemPosition]
+    }
+
+
 }
